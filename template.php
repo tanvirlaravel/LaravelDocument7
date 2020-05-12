@@ -10,3 +10,5 @@
 
 <p class="bg-danger p-2 text-white"></p>
 <p class="bg-success p-2 text-white"></p>
+
+<button class="btn btn-outline-warning">Closure</button>
