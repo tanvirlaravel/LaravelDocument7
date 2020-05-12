@@ -6,5 +6,7 @@
 
 </pre>
 
+<p class="bg-warning p-3"></p>
+
 <p class="bg-danger p-2 text-white"></p>
 <p class="bg-success p-2 text-white"></p>

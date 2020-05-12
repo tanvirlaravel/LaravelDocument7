@@ -6,18 +6,22 @@
     <div class="col-3">
         <div class="nav flex-column nav-pills card" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Basic Routing</a>
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home">Basic Routing</a>
 
-            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Route Parameters</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile">Route Parameters</a>
 
-            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Route Groups</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages">Route Groups</a>
 
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Route Model Binding</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings">Route Model Binding</a>
 
             <a class="nav-link" data-toggle="pill" href="#Fallback-Routes">Fallback Routes</a>
+
             <a class="nav-link" data-toggle="pill" href="#Rate-Limiting">Rate Limiting</a>
+
             <a class="nav-link" data-toggle="pill" href="#Form-Method-Spoofing">Form Method Spoofing</a>
+
             <a class="nav-link" data-toggle="pill" href="#Accessing-The-Current-Route">Accessing The Current Route</a>
+
             <a class="nav-link" data-toggle="pill" href="#CORS">Cross-Origin Resource Sharing (CORS)</a>
 
 

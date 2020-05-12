@@ -56,11 +56,16 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
-                    <a class="dropdown-item" href="<?= $path ?>functions/arguments.php">Function arguments</a>
-                    <a class="dropdown-item" href="<?= $path ?>functions/returning-values.php">Returning values</a>
-                    <a class="dropdown-item" href="<?= $path ?>functions/variable-functions.php">Variable functions </a>
-                    <a class="dropdown-item" href="<?= $path ?>functions/internal.php">Internal (built-in) functions</a>
-                    <a class="dropdown-item" href="<?= $path ?>functions/anonymous.php">Anonymous functions</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Middleware.php">Middleware</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
+
                 </div>
             </li>
 
