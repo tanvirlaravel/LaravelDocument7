@@ -9,7 +9,7 @@
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Basic syntax
+                    Prologue
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="<?= $path ?>basicSyntax/php-tags.php">PHP Tags</a>
@@ -20,7 +20,7 @@
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Types
+                    Getting Started
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="<?= $path ?>types/introduction.php">Introduction</a>
@@ -38,7 +38,7 @@
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Variables
+                    Architecture Concepts
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="<?= $path ?>variables/basics.php">basics</a>
@@ -49,21 +49,13 @@
                 </div>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="<?= $path ?>constants.php">Constants</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<?= $path ?>expressions.php">Expressions</a>
-            </li>
-
-
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Functions
+                    The Basics
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="<?= $path ?>functions/user-defined.php">User-defined functions</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
                     <a class="dropdown-item" href="<?= $path ?>functions/arguments.php">Function arguments</a>
                     <a class="dropdown-item" href="<?= $path ?>functions/returning-values.php">Returning values</a>
                     <a class="dropdown-item" href="<?= $path ?>functions/variable-functions.php">Variable functions </a>

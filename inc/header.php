@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>PHP Manual</title>
+    <title>Laravel 7</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -11,4 +11,4 @@
 
 <body>
 
-    <?php  $path = 'http://phpmanual.test/'   ?>
+    <?php  $path = 'http://laraveldocument7.test/'   ?>
