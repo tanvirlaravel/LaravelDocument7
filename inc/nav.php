@@ -62,9 +62,10 @@
                     <a class="dropdown-item" href="<?= $path ?>Basics/requests.php">HTTP Requests</a>
                     <a class="dropdown-item" href="<?= $path ?>Basics/views.php">Views</a>
                     <a class="dropdown-item" href="<?= $path ?>Basics/urls.php">URL Generation</a>
-                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
-                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
-                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/session.php">HTTP Session</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php"></a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php"></a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php"></a>
 
                 </div>
             </li>
