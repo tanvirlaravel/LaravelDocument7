@@ -55,8 +55,8 @@
                     <li>Route::<code>delete</code>( $uri, $callback);</li>
                     <li>Route::<code>options</code>( $uri, $callback);</li>
                     <p>Sometimes you may need to register a route that responds to multiple HTTP verbs. You may do so using the match method. Or, you may even register a route that responds to all HTTP verbs using the any method:</p>
-                    <li>Route::<code>match</code>code>(['get', 'post'], '/', function () {});</li>
-                    <li>Route::<code>any</code>code>('/', function () {});</li>
+                    <li>Route::<code>match</code>(['get', 'post'], '/', function () {});</li>
+                    <li>Route::<code>any</code>('/', function () {});</li>
                 </ul>
                 <h4>CSRF Protection</h4>
                 <p>Any HTML forms pointing to POST, PUT, PATCH, or DELETE routes that are defined in the web routes file should include a CSRF token field. </p>

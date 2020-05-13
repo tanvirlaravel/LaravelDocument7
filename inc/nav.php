@@ -59,7 +59,7 @@
                     <a class="dropdown-item" href="<?= $path ?>Basics/Middleware.php">Middleware</a>
                     <a class="dropdown-item" href="<?= $path ?>Basics/csrf.php">CSRF Protection</a>
                     <a class="dropdown-item" href="<?= $path ?>Basics/Controllers.php">Controllers</a>
-                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/requests.php">HTTP Requests</a>
                     <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
                     <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
                     <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php">Routing</a>
