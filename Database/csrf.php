@@ -1,7 +1,8 @@
 <?php include_once '../inc/header.php' ?>
 <?php include_once '../inc/nav.php' ?>
 
-<h1 class="my-4 text-info text-center display-3">Middleware</h1>
+<h1 class="my-4 text-info text-center display-3">CSRF Protection</h1>
+<h1>Later</h1>
 <div class="row">
     <div class="col-3">
         <div class="nav flex-column nav-pills card" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -27,16 +28,7 @@
 
                 <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Basic Routing</h4>
 
-                <p>filtering HTTP requests entering application.</p>
-
-                <p>It's best to envision middleware as a series of "layers" HTTP requests must pass through before they hit your application. Each layer can examine the request and even reject it entirely.</p>
-
-                <p>Laravel includes a middleware that verifies the user of your application is authenticated.</p>
-                <ul>
-                    <li>If the user is not authenticated, the middleware will redirect the user to the login screen.</li>
-                    <li>However, if the user is authenticated, the middleware will allow the request to proceed further into the application.</li>
-                </ul>
-
+                <p>Middleware provide a convenient mechanism for filtering HTTP requests entering application. Laravel includes a middleware that verifies the user of your application is authenticated. If the user is not authenticated, the middleware will redirect the user to the login screen. However, if the user is authenticated, the middleware will allow the request to proceed further into the application.</p>
 
 
                 <p>All of these middleware are located in the <code>app/Http/Middleware directory</code>.</p>
@@ -62,18 +54,46 @@
         return $next($request);
     }
 </pre>
-
+                <p>It's best to envision middleware as a series of "layers" HTTP requests must pass through before they hit your application. Each layer can examine the request and even reject it entirely.</p>
                 <p class="bg-warning p-3">All middleware are resolved via the service container, so you may type-hint any dependencies you need within a middleware's constructor.</p>
 
                 <h4>Before & After Middleware</h4>
-                online search for more documentation.
+                <p>Whether a middleware runs before or after a request depends on the middleware itself.</p>
             </div>
 
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 
                 <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Registering Middleware</h4>
 
+                <h4>Global Middleware</h4>
+                <p>If you want a middleware to run during every HTTP request to your application, list the middleware class in the <code>$middleware</code> property of your <code>app/Http/Kernel.php</code> class.</p>
 
+                <h4>Assigning Middleware To Routes</h4>
+                <p><code>app/Http/Kernel.php file</code>.</p>
+
+
+                <pre class="p-3 text-white-50 bg-dark">
+                // Within App\Http\Kernel Class...
+
+protected $routeMiddleware = [
+    'auth' => \App\Http\Middleware\Authenticate::class,
+];
+                </pre>
+
+
+                <pre class="p-3 text-white-50 bg-dark">
+               use App\Http\Middleware\CheckAge;
+
+Route::middleware([CheckAge::class])->group(function () {
+    Route::get('/', function () {
+        //
+    });
+
+    Route::get('admin/profile', function () {
+        //
+    })->withoutMiddleware([CheckAge::class]);
+});                
+                </pre>
 
                 <h4>Middleware Groups</h4>
                 <pre class="p-3 text-white-50 bg-dark">
@@ -143,7 +163,6 @@ Route::put('post/{id}', function ($id) {
 
             <div class="tab-pane fade" id="Fallback-Routes">
                 <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Terminable Middleware</h4>
-                <p>Sometimes a middleware may need to do some work after the HTTP response has been sent to the browser. If you define a terminate method on your middleware and your web server is using FastCGI, the terminate method will automatically be called after the response is sent to the browser:</p>
                 <p>Later</p>
             </div>
 

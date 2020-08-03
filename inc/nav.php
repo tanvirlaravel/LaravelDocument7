@@ -35,7 +35,6 @@
                     <a class="dropdown-item" href="<?= $path ?>types/null.php">Null</a>
                 </div>
             </li>
-
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Architecture Concepts
@@ -68,6 +67,38 @@
                     <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php"></a>
 
                 </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Database
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="<?= $path ?>Database/GettingStarted.php">Getting Started</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Middleware.php">Middleware</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/csrf.php">CSRF Protection</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Controllers.php">Controllers</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/requests.php">HTTP Requests</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/views.php">Views</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/urls.php">URL Generation</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/session.php">HTTP Session</a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php"></a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php"></a>
+                    <a class="dropdown-item" href="<?= $path ?>Basics/Routing.php"></a>
+
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?= $path ?>collection.php">Collection</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?= $path ?>tutorialspoint.php">T point</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?= $path ?>defination.php">Defination</a>
             </li>
 
 

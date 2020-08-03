@@ -31,10 +31,23 @@
                 <p>nothing</p>
 
                 <h4>Controllers & Namespaces</h4>
-                <a href="https://laravel.com/docs/7.x/controllers#controllers-and-namespaces">Official Documentation</a>
+                <p>to nest controllers deeper into the <code>App\Http\Controllers</code> directory.</p>
+                <pre class="p-3 text-white-50 bg-dark">
+Route::get('foo', 'Photos\AdminController@method');
+</pre>
+
 
                 <h4>Single Action Controllers</h4>
-                <a href="https://laravel.com/docs/7.x/controllers#single-action-controllers">Official Documentation</a>
+                <p>to nest controllers deeper into the <code>App\Http\Controllers</code> directory.</p>
+                <pre class="p-3 text-white-50 bg-dark">
+    public function __invoke($id)
+    {
+        return view('user.profile', ['user' => User::findOrFail($id)]);
+    }
+    
+    
+    Route::get('user/{id}', 'ShowProfile');
+</pre>
 
             </div>
 
@@ -43,10 +56,14 @@
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                 <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Controller Middleware</h4>
 
-
+                <pre class="p-3 text-white-50 bg-dark">
+Route::get('profile', 'UserController@show')->middleware('auth');
+</pre>
 
                 <pre class="p-3 text-white-50 bg-dark">
- public function __construct()
+class UserController extends Controller
+{
+    public function __construct()
     {
         $this->middleware('auth');
 
@@ -54,7 +71,16 @@
 
         $this->middleware('subscribed')->except('store');
     }
+}
+</pre>
 
+                <p>Controllers also allow you to register middleware using a Closure. This provides a convenient way to define a middleware for a single controller without defining an entire middleware class:</p>
+                <pre class="p-3 text-white-50 bg-dark">
+$this->middleware(function ($request, $next) {
+    // ...
+
+    return $next($request);
+});
 </pre>
 
             </div>
@@ -89,7 +115,7 @@ Route::resource('photos', 'PhotoController')->except([
                 <h4>later</h4>
 
                 <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Naming Resource Routes</h4>
-
+                <p>By default, all resource controller actions have a route name; however, you can override these names by passing a names array with your options:</p>
                 <pre class="p-3 text-white-50 bg-dark">
 Route::resource('photos', 'PhotoController')->names([
     'create' => 'photos.build'
@@ -110,10 +136,16 @@ Route::resource('photos', 'PhotoController')->names([
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                 <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Dependency Injection & Controllers</h4>
 
-
+                <p><button class="btn btn-outline-warning">PHP Dependency Injection?</button> => Dependency injection is a procedure where one object supplies the dependencies of another object.</p>
+                <p>The dependencies can be changed at run time as well as compile time</p>
+                <ul>
+                    <li><b>Modular:</b> The Dependency Injection helps create completely self-sufficient classes or modules</li>
+                    <li><b>Testable:</b>It helps write testable code easily eg unit tests for example</li>
+                    <li><b>Maintainable:</b> Since each class becomes modular, it becomes easier to manage it</li>
+                </ul>
 
                 <h4>Constructor Injection</h4>
-                <p>The Laravel service container is used to resolve all Laravel controllers. As a result, you are able to type-hint any dependencies your controller may need in its constructor. The declared dependencies will automatically be resolved and injected into the controller instance:
+                <p>The Laravel service container is used to resolve all Laravel controllers. As a result, you are able to type-hint any dependencies your controller may need in its constructor. The declared dependencies will automatically be resolved and injected into the controller <instance:></instance:>
                 </p>
 
                 <pre class="p-3 text-white-50 bg-dark">
@@ -139,9 +171,7 @@ Route::resource('photos', 'PhotoController')->names([
 
             <div class="tab-pane fade" id="Fallback-Routes">
                 <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Route Caching</h4>
-                <p>Closure based routes cannot be cached. To use route caching, you must convert any Closure routes to controller classes.</p>
-                <p>Why use route cathing?</p>
-                search internet
+                <h4>Later</h4>
             </div>
 
         </div>
